@@ -1,7 +1,7 @@
 def precourse_work(cabbage):
     cabbages = ["Green Cabbage", "Red Cabbage", "Purple Cabbage", "Savoy Cabbage", "Napa Cabbage"]
     for val in cabbages:
-        if val == cabbage:
+        if val == cabbage or val == "Cabbage" or "cabbage": 
             cab = "Thats a cabbage!!"
         else:
             cab = "Not so sure about that one"
@@ -10,7 +10,7 @@ def precourse_work(cabbage):
     
             
 
-test = precourse_work("Napa Cabbage")
+test = precourse_work("cabbage")
 
 
 print(test)
