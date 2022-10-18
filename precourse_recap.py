@@ -1,8 +1,10 @@
 def is_cabbage(cabbage):
-    cabbages = ["Green Cabbage", "Red Cabbage", "Purple Cabbage", "Savoy Cabbage", "Napa Cabbage"]
-    for val in cabbages:
-        if val == cabbage or val == "Cabbage" or val == "cabbage": 
+    testlist = ["green cabbage", "red cabbage", "purple cabbage", "savoy cabbage", "napa cabbage"]
+    for val in testlist:
+        if val == cabbage.lower() or val == "cabbage": 
+
             cab = "Thats a cabbage!!!!"
+            break
         else:
             cab = "I don't think thats a cabbage..."
     return cab
@@ -10,7 +12,7 @@ def is_cabbage(cabbage):
     
             
 
-test = is_cabbage("Rory")
+test = is_cabbage("sAvoY cAbbage")
 
 
 print(test)
